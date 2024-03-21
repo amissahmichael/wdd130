@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Rafting Company</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="hero">
+            <img src="images/hero-image.jpg" alt="Rafting Hero Image">
+            <h1>Michael Amissah</h1>
+            <article>
+                <img src="images/client-image.jpg" alt="Happy Client">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero et tortor scelerisque, id condimentum ex scelerisque.</p>
+            </article>
+        </div>
+        
+        <section>
+            <h2>History</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero et tortor scelerisque, id condimentum ex scelerisque.</p>
+        </section>
+        
+        <section>
+            <h2>Adventure Awaits You!</h2>
+            <img src="images/rafting1.jpg" alt="Rafting Image">
+            <img src="images/rafting2.jpg" alt="Rafting Image">
+            <img src="images/rafting3.jpg" alt="Rafting Image">
+            <img src="images/rafting4.jpg" alt="Rafting Image">
+            <img src="images/rafting5.jpg" alt="Rafting Image">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Rafting Company.Michael Amissah</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter.svg" alt="Twitter"></a>
+            <a href="https://instagram.com"><img src="images/instagram.svg" alt="Instagram"></a>
+        </nav>
+    </footer>
+
+</body>
+</html>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #336699;
+    --secondary-color: #6699cc;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+footer nav.sociallinks img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
