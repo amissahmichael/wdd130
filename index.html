@@ -1,64 +1,74 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Michael Amissah | WDD 130</title>
-   <meta name="description" content="My name is Michael Amissah am from Ghana, am doing web foundamental,i want people to know who i am.">
-    <meta name="Michael Amissah" content="Michael Amissah">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Home Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#">Home</a>
-      <a href="wwr/">Rafting Site</a>
-      <a href="wwr/site-plan-rafting.html">Rafting Site Plan</a>
-    </nav>
-  </header>
-  <main>
-    <h1>Michael Amissah | WDD 130</h1>
-    <img src="images/profile.jpg" alt="Hello, my name is Michael Amissah" width="200">
-    <p>Hello! My name is Michael Amissah and I am from Cape Coast, Ghana. I enjoy ... </p>
-  </main>
-  <footer>
-    <p>&copy; 2024 🌴 Michael Amissah 🌴 Ghana, Cape Coast</p>
-  </footer>
+    <header>
+        <!-- Header content -->
+    </header>
+    
+    <main>
+        <!-- Main content -->
+        <ul class="box">
+            <li><a href="https://churchofjesuschristtemples.org/aba-nigeria-temple//" target="_blank">Aba Nigeria Temple</a></li>
+            <li><a href="https://churchofjesuschristtemples.org/accra-ghana-temple/" target="_blank">Accra Ghana Temple</a></li>
+            <li><a href="https://churchofjesuschristtemples.org/abidjan-ivory-coast-temple/" target="_blank">Abidjan Ivory Coast Temple</a></li>
+        </ul>
+    </main>
+
+    <aside class="box">
+        <!-- Aside content -->
+    </aside>
+
+    <footer>
+        <!-- Footer content -->
+    </footer>
+
+    <!-- Last modified date -->
+    <!-- <footer>Last modified: 2024-03-21</footer> -->
+
 </body>
 </html>
 
-/* styles.css */
-
-/* Limit width of main */
-main {
-    max-width: 800px;
-    margin: 0 auto;
+/* Reset default margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Styles for aside */
+/* Class Selectors */
+.box {
+  margin: 1rem;
+  border: 1px solid rgba(0,0,0,.1);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+
+/* Float profile image */
+.profile-image {
+  float: right;
+}
+
+/* Positioning for state/country heading */
 aside {
-    width: 30%;
-    margin: 20px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    background-color: #f9f9f9;
-    color: #333;
+  position: relative;
 }
 
-aside img {
-    width: 200px;
-    height: auto;
+.state-country-heading {
+  position: absolute;
+  top: 10px; /* Adjust top position as needed */
+  left: 10px; /* Adjust left position as needed */
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust background color opacity as needed */
+  padding: 5px;
 }
 
-/* Make the existing paragraph p padding property value 0 pixels */
-p {
-    padding: 0;
+/* Navigation links */
+nav a {
+  margin-right: 10px;
 }
-
-/* Footer styles */
-footer {
-    margin-top: 20px;
-    border-top: 1px solid #ccc;
-    text-align: center;
-}
-
