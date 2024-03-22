@@ -8,67 +8,79 @@
 </head>
 <body>
     <header>
-        <!-- Header content -->
+        <nav>
+            <a href="index.html">home</a>
+            <a href="week1.html">W1</a>
+            <a href="week2.html">W2</a>
+            <a href="week3.html">W3</a>
+            <a href="week4.html">W4</a>
+            <a href="#">https://www.linkedin.com/feed/</a>
+            <a href="">https://web.facebook.com/?_rdc=1&_rdr</a> 
+        </nav>
     </header>
-    
-    <main>
-        <!-- Main content -->
-        <ul class="box">
-            <li><a href="https://churchofjesuschristtemples.org/aba-nigeria-temple//" target="_blank">Aba Nigeria Temple</a></li>
-            <li><a href="https://churchofjesuschristtemples.org/accra-ghana-temple/" target="_blank">Accra Ghana Temple</a></li>
-            <li><a href="https://churchofjesuschristtemples.org/abidjan-ivory-coast-temple/" target="_blank">Abidjan Ivory Coast Temple</a></li>
-        </ul>
-    </main>
 
-    <aside class="box">
-        <!-- Aside content -->
-    </aside>
+    <div class="grid">
+        <aside>
+            <!-- Welcome to my course home page! I'm a student at BYU-Idaho learning web development. Feel free to explore the content -->
+        </aside>
+        <main>
+        <h1>Welcome to WDD 130<h1/>
+            <!-- This course covers web fundamentals and explores various modern layout techniques using CSS Flex and Grid -->
+        </main>
+    </div>
 
     <footer>
-        <!-- Footer content -->
+        <!--  Brigham Young University-Idaho. All rights reservede -->
     </footer>
-
-    <!-- Last modified date -->
-    <!-- <footer>Last modified: 2024-03-21</footer> -->
-
 </body>
 </html>
 
-/* Reset default margin, padding, and box-sizing */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Class Selectors */
-.box {
-  margin: 1rem;
-  border: 1px solid rgba(0,0,0,.1);
-  padding: 1rem;
-  background-color: #ddd;
-  color: #000;
+header, footer {
+    max-width: 840px;
+    margin: 0 auto;
 }
 
-/* Float profile image */
-.profile-image {
-  float: right;
+nav {
+    background-color: steelblue;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-/* Positioning for state/country heading */
-aside {
-  position: relative;
-}
-
-.state-country-heading {
-  position: absolute;
-  top: 10px; /* Adjust top position as needed */
-  left: 10px; /* Adjust left position as needed */
-  background-color: rgba(255, 255, 255, 0.7); /* Adjust background color opacity as needed */
-  padding: 5px;
-}
-
-/* Navigation links */
 nav a {
-  margin-right: 10px;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff; /* shorthand for white */
+}
+
+h1 {
+    border-bottom: 1px solid black;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
